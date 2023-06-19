@@ -1,0 +1,34 @@
+# Topics Advertised
+TrajectoryTopic:            '/wtr/trajectory'
+WayPointsTopic:             '/wtr/waypoints'
+RouteTopic:                 '/wtr/route'
+AccTopic:                   '/wtr/acc'
+
+# Frame Name
+FrameName:                  'world'
+
+# Traj Plan Params
+WeightT:                     1024.0
+
+WeightAcc:                   16.0
+
+WeightJerk:                  0.4
+
+MaxAccRate:                  0.4
+
+MaxVelRate:                  0.6
+
+Iterations:                  23
+
+Epsilon:                     0.02
+
+StartMoveZone:                    [0.0,0.0,0.0]
+PichUpZoneA:                       [1.0,-1.0,0]
+PickUpZoneB:                       [1.0,-0.5,0]
+FireZoneA:                     [-0.2,0,0]
+FireZoneB:                     [-1.5,0,0]
+FireZoneC:                     [1,0,0]
+
+expand_factor:                      2     #一倍膨胀对应5个像素
+point_pace:                         20    
+

@@ -1,0 +1,11 @@
+image: /home/szf/ROS/catkin_ws_3/src/wtr_race/map/wtr_map.pgm
+# resolution: 0.050000
+# origin: [-50.000000, -50.000000, 0.000000]
+#对准零点之后resolution和origin同比例变化缩放栅格
+resolution: 0.0500000
+origin: [0.00000000, -6.0000000, 0.000000]
+# origin: [0.00000000, -6.0000000, 0.000000]
+negate: 0
+occupied_thresh: 0.3
+free_thresh: 0.2
+

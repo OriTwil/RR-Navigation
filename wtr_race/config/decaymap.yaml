@@ -1,0 +1,29 @@
+decay_map:
+  # first for obstacle map, second for guide map
+  #分辨率：环25cm外径，21cm内径，但是分辨率不能小于0.5
+  resolutions: [ 0.05, 0.3 ]
+  # resolutions: [ 0.1, 0.8 ]
+  inflation_steps: [1,1 ]
+  odom: "/lidar_slam/odom"
+  cloud: "/cloud_registered" #realworld
+  # Map size [m]
+  map_size_x: 50
+  map_size_y: 40
+  map_size_z: 3.0
+  virtual_ceil_height: 3.0
+  visualization_truncate_height: 2.6
+  ground_height: 0.15
+  local_update_distance: 100 # 20
+
+  print_update_time: false
+  decay_time: 0.0
+  hit_num_thresh: 2
+  hit_point_buffer_size: 5
+  odom_timeout: 20000.0
+  frame_id: "world"
+
+  OverallSituation:             [0,0,0,
+                        0,0,0,
+                        0,0,0,0,
+                        0]
+
